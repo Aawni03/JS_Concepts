@@ -49,7 +49,42 @@ let numToString = String(num)
 console.log(typeof numToString);
 console.log(numToString);
 
+// OPERATIONS ===================================================
+
+let value = 3;
+let negValue = -value
+console.log(negValue);
+
+// ArthematicOperations__+, -, *, /, %, ++, --, **
+
+console.log("1"+2+2);   // 122,
+console.log(2+2+"1");   // 41
+
+// PREFIX - POSTFIX
+let a = 3;
+const b = ++a;
+console.log(`a:${a}, b:${b}`);  // "a:4, b:4", returns the value after incrementing.
 
 
+let x = 3;
+const y = x++;
+console.log(`x:${x}, y:${y}`); // "x:4, y:3", returns the value before incrementing
 
+
+// ComparisionOperators___>, <, >=, <=, ==, !=, !==, ===,
+//. Here we should compare with the same dataType values.
+
+console.log(null > 0);  //false
+console.log(null == 0); //false
+console.log(null >= 0); //true
+// This is not always predictable as the value of null changes in every now and then.
+
+console.log(undefined > 0); //false
+console.log(undefined == 0);    //false
+console.log(undefined < 0);    //false
+// This is not always predictable as the value of null changes in every now and then.
+
+// STRICT CHECK
+console.log("2" == 2);  // true, checks only the value
+console.log("2" === 2); // false, checks the value and their dataType.
 

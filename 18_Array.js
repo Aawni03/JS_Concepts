@@ -48,3 +48,50 @@ console.log('B ', arr); // [ 0, 4, 5, 'aawni' ]
 
 
 console.log(arr);
+
+
+//- Array Functions
+
+const arrFunc1 = ['1', '2', '3']
+const arrFunct2 = ['a','s','d','f']
+// arrFunc1.push(arrFunct2)    //. push, appends all the elements to the last of an array.
+// console.log(arrFunc1);  // [ '1', '2', '3', [ 'a', 's', 'd', 'f' ] ]
+
+
+// const concatArr = arrFunc1.concat(arrFunct2)  //. combines 2 or more arrays.
+// console.log(concatArr);  // [ '1', '2', '3','a', 's', 'd', 'f' ]
+
+//- Spread Operator
+const spreadArr = [...arrFunc1, ...arrFunct2]
+console.log(spreadArr); //. this spreads all the elements of the 2or more arrays in a single array
+
+//- Flat, concats 2 or more arrays in a single array with a specified depth.
+// doesn't work for strings.
+const flatArr = [1,2,3,[4,5,6],7,8,[9,45,[4,123,5,15247]]]
+console.log(flatArr.flat(Infinity));
+
+
+
+//- Array Conversion
+console.log(Array.isArray('Aawni')); //false
+
+
+console.log(Array.from('Aawni'));   //. converts the string to Array
+
+console.log(Array.from({name:'Aawni'}));    
+//. [], this gets confused. we need to inform if the method is being applied on the key or the value.
+//= interview Focus
+
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+console.log(Array.of(score1,score2,score3));
+// Returns a new Array from the set of elements.
+
+
+
+
+
+
+
+

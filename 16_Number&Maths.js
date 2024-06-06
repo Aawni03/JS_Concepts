@@ -5,7 +5,7 @@ const balance = new Number(100)
 console.log(balance);   // [Number:100], specifically typecasting 
 
 
-//> MATH ----------------------------
+//- MATH ----------------------------
 
 console.log(Math);
 console.log(Math.PI);
@@ -14,7 +14,7 @@ console.log(Math.round(6.7));   // rounds to the nearest integer
 console.log(Math.ceil(4.2));    // rounds to the nearest larger value
 console.log(Math.floor(8.7));   // rounds to the nearest smaller value.
 
-//> random
+//- random
 console.log(Math.random());     // returns any num b/w 0-1
 console.log((Math.random()*10) +1);   // +1 is to avoid the possibility of getting 0.
 console.log(Math.floor(Math.random()*10) +1);

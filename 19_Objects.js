@@ -119,6 +119,30 @@ console.log(Object.entries(JSUser));
 
 
 
+//- Object Destructure
+const course = {
+    courseName : 'js',
+    price:'999',
+    courseInstructor:'Abc'
+}
+
+//. Destructuring, {abc}
+const {courseName, courseInstructor} = course
+console.log(courseName);
+
+//. Alias
+const {courseName:cName, courseInstructor:cInst} = course
+console.log(cName);
+
+//- API ___ JSON, key:value pair
+// {
+//     'name':'aawni',
+//     'learning':'js',
+//     'price':'happyiness'
+// }
+
+
+
 
 
 

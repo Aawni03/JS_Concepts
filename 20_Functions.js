@@ -83,7 +83,7 @@ handleObj({
 
 const Arr = [10,20,30,40]
 function ArrFunct(anyArr){
-    return anyArr
+    return anyArr[1]
 }
 console.log(ArrFunct(Arr));
 
